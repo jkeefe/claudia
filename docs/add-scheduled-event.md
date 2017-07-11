@@ -16,11 +16,11 @@ claudia add-scheduled-event {OPTIONS}
     http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ScheduledEvents.html
     * _For example_: rate(5 minutes)
 *  `--rate`:  (_optional_) a shorthand for rate-based expressions, without the brackets.
-    If this is specified, the schedule argument is not required/ignored
+    If this is specified, the schedule argument is ignored/not required
     * _For example_: 5 minutes
 *  `--cron`:  (_optional_) a shorthand for cron-based expressions, without the brackets.
-    If this is specified, the schedule argument is not required/ignored
-    * _For example_: 0 8 1 * ? *
+    If this is specified, the schedule argument is ignored/not required
+    * _For example_: `"0 8 1 * ? *"`
 *  `--version`:  (_optional_) Bind to a particular version
     * _For example_: production
     * _Defaults to_: latest version
